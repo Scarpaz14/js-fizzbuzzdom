@@ -20,7 +20,31 @@ for( let i = 1; i <= 100; i++ ) {
     div.classList.add("box");
     div.innerText = i;
     container.append(div);
+
+    if (i % 3 == 0 && i % 5 == 0) {
+      div.innerText="fizzbuzz";
+      div.classList.add("fizzbuzz")
+      console.log("FizzBuzz");
+      
+      
+  } else if (i % 3 == 0) {
+    div.innerText="fizz";
+      div.classList.add("fizz")
+      console.log("Fizz");
+      
+
+  } else if (i % 5 == 0) {
+    div.innerText="buzz";
+      div.classList.add("buzz")
+      console.log("Buzz");
+      
+  
+  } else {
+    console.log(i);
+
+  }
 }
+
 
 // Per i multipli di 3 stampiamo “Fizz” al posto del numero e per i multipli di 5 stampiamo Buzz.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
@@ -32,21 +56,4 @@ for( let i = 1; i <= 100; i++ ) {
 // ALTRIMENTI STAMPIAMO SOLO I 
 
 
-    for (let i = 1; i <= 100; i++) {
-      if (i % 3 == 0 && i % 5 == 0) {
-        console.log("FizzBuzz");
-    
-    } else if (i % 5 == 0) {
-      console.log("Buzz");
-      
-    
-    } else if (i % 3 == 0) {
-      console.log("Fizz");
-      
-    
-    } else {
-      console.log(i);
-
-    }
-    }
-    
+ 
